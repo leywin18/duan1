@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <!-- bảng mã ký tự cho trang web hỗ trợ các ký tự ngoài bảng chữ cái tiếng anh như trung hàn việt nhật,...  -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--Sử dụng để hỗ trợ multil screen size, hỗ trợ kích thước màn hình khác nhau như PC, mobile, tablet,..
+    
+    width=device-width set chiều rộng bằng chiều rộng của thiết bị
+    initial-scale=1.0 tỉ lệ hiển thị trang web 100%, để tránh bị phóng to hoặc thu nhỏ
+     -->
+    <title>Document</title>
+    <!-- Hiển thị tiêu đề của trang web trên tab trình duyệt
+     hiển thị tiêu đề trên kết quả tìm kiếm
+     -->
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <!-- <h1></h1>
+     nên sử dụng thẻ h1 duy nhất
+     Các thẻ h có cấp độ khác nhau từ 1 tới 6, 1 tương ứng vs lớn và quan trọng nhất thường dùng để trình bày tiêu
+     đề, mục lục, giới thiệu, ...
+    -->
+
+    <h1>hello</h1>
+    <h2>hello</h2>
+    <!-- alt + shift + mũi tên xuống -->
+    <h3>hello</h3>
+    <h4>hello</h4>
+    <h5>hello</h5>
+    <h6>hello</h6>
+
+    <p>Lorem ipsum dolor sit amet.</p>
+    <p>
+      1<br />
+      2<br />
+      3<br />
+      4<br />
+    </p>
+    <hr />
+    <!-- thẻ tự đóng <br> break có tác dụng ngắt dòng  br trên nhiều dòng 1 lúc có thể nhấn alt rồi chỏ chuột từng dòng cần thẻ br
+     thẻ <hr> horizontal rule tạo đường kể ngang ngăn cách trên trang
+    -->
+    <!-- 
+    Thẻ b: bold - in đậm tương tự thẻ <strong></strong> 
+    thẻ i: italic - in nghiêng tương tự thẻ <em></em>
+    thẻ u: underline - gạch chân
+    3 thể trên đều có đóng mở và lồng nhau được
+    3 thẻ kia không mang ngữ nghĩa vs trình duyệt, còn strong vs em thì có
+     -->
+    <p>
+      <i><b>hùng</b></i>
+    </p>
+    <!-- thẻ <ul></ul> - unordered list: danh sách không có thứ tự
+     thẻ <ol></ol>: ordered list: danh sách có thứ tự
+     <li></li>: list item: là thẻ con trực tiếp của ul, ol 
+    
+    -->
+    <h1>How to luộc trứng</h1>
+    <h2>Nguyên liệu:</h2>
+    <ul>
+      <li>Trứng gà 10 quả</li>
+      <li>Nước lọc: 1000ml</li>
+      <li>Nồi</li>
+      <li>Bếp ga</li>
+    </ul>
+    <h2>Cách chế biến:</h2>
+    <ol type="A">
+      <li>Sơ chế nguyên liệu: rửa sạch trứng</li>
+      <li>Bật bếp</li>
+      <li>Luộc trong 6 phút</li>
+    </ol>
+    <!-- học emmet
+     ul>li
+     ul>li*4
+     ul>li*5{phần tử số $}
+
+     Thuộc tính thường thấy của ol: reversed-đảo ngược thứ tự
+     type- kiểu thứ tự mặc định 1 2 3 => có thể thay đổi sang A B C, chữ số la mã
+    -->
+    <ol type="I">
+      <li>Lorem, ipsum.</li>
+      <li>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam,
+        voluptate. Tempora non veritatis rem earum voluptate. Ut unde libero
+        autem molestias, aliquam omnis quis excepturi, tempora itaque
+        perferendis voluptatum esse?
+        <ol>
+          <li>Lorem, ipsum dolor.</li>
+          <li>
+            Lorem ipsum dolor
+            <ol type="a">
+              <li>Lorem ipsum dolor sit amet.</li>
+              <li>Lorem ipsum dolor sit amet.</li>
+              <li>Lorem ipsum dolor sit amet.</li>
+            </ol>
+          </li>
+        </ol>
+      </li>
+      <li>kết</li>
+    </ol>
+    <ul>
+      <li>1</li>
+      <li>
+        2
+        <ol type="I">
+          <li>2.1</li>
+          <li>
+            2.2
+            <ol>
+              <li>item2.2.1</li>
+              <li>item2.2.2</li>
+              <li>item2.2.3</li>
+            </ol>
+          </li>
+          <li>2.3</li>
+          <li>2.4</li>
+        </ol>
+      </li>
+      <li>3</li>
+      <li>4</li>
+    </ul>
+    <!-- thẻ a - anchor:neo gắn kèm liên kết, email, phone
+    thuộc tính href (hypertext reference) được dùng để khai báo URL mà trang web sẽ được chuyển đến
+    thuộc tính target để chỉ định cách mở liên kết được nhúng trong thẻ a giá trị thuộc tính: _self mở trong web hiện tại, _blank mỏ trên tab mới
+      -->
+    <a href="https://tuhoc.cc/" target="_blank"> click để vô web tuhoc</a><br />
+    <a href=""> tải lại trang</a><br />
+    <a href="#">Trở lên đầu trang</a><br />
+    <p>ví dụ điện thoại</p>
+    <!-- chuyển hướng tới 1 ứng dụng có thể gọi nếu máy đã cài-->
+    <a href="tel: 0363374321">0363374321</a>
+    <p>ví dụ email</p>
+    <!-- chuyển hướng đến 1 ứng dụng để gửi email
+     1 số tham số truyền trước cho mailto
+     cc:danh sách email sẽ nhận được bản sao của thư
+     bcc:danh sách email ẩn sẽ nhận được bản sao của thư
+     subject:chủ đề của thư
+     body:nội dung email
+     ?:dấu phân cách giữa phần mailto và tham số
+     &:dấu phân cách tham số
+      -->
+    <a
+      href="mailto:hungtheking12@gmail.com?cc=hung.nv1942912@sis.hust.edu.vn&subject=helpme"
+      >gửi email</a
+    >
+    <a
+      href="mailto:hungtheking12@gmail.com?cc=hung.nv1942912@sis.hust.edu.vn&subject=Help%20me"
+      >Gửi email</a
+    >
+    <!-- thẻ img: image là thẻ tự đóng để hiển thị hình ảnh trên website
+     Thuộc tính src được sử dụng để chỉ định đường dẫn tới đường link hình ảnh (source image file)
+     thuộc tính "alt" alternative: để
+     Hiển thị text khi link ảnh lỗi
+     Hỗ trợ trình đọc màn hình cho người khiếm thị (screen reader)
+     công cụ tìm kiếm thu thập dữ liệu trên page
+
+      -->
+    <h1>Hình ảnh hero</h1>
+    <img
+      src="https://images.unsplash.com/photo-1513384312027-9fa69a360337?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8aGVyb3xlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&q=60&w=600"
+      alt="Hình ảnh Hero superman"
+    />
+    <h1>Dùng hình ảnh ở máy về</h1>
+    <img src="img/toy.jpg" alt="Hình ảnh woody" width="50%" height="50%" />
+  </body>
+</html>
